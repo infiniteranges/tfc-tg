@@ -1,1 +1,0 @@
-# Connecting-NodeJs-and-MongoDB-Instance-on-AWS

@@ -1,24 +1,6 @@
-
-variable "region" {
-  description = "us-west-2"
-}
-
-variable "environment" {
-  description = "The Deployment environment"
-}
-
-//Networking
-variable "vpc_cidr" {
-  description = "The CIDR block of the vpc"
-}
-
-variable "public_subnets_cidr" {
-  #   type        = list
-  description = "The CIDR block for the public subnet"
-}
-
-variable "private_subnets_cidr" {
-  #   type        = list
-  description = "The CIDR block for the private subnet"
-}
+variable "role_arn" {}    #arn:aws:iam::753967026299:role/switchroleintoIR
+variable "external_id" {} #"infiniteranges"
+variable "instance_type" {}
+variable "subnet_id" {} #subnet-0966dfeef931d6a8b
+variable "tag_name" {}
 
