@@ -1,6 +1,8 @@
-variable "role_arn" {}    #arn:aws:iam::753967026299:role/switchroleintoIR
-variable "external_id" {} #"infiniteranges"
+variable "role_arn" {}  
+variable "external_id" {} 
 variable "instance_type" {}
-variable "subnet_id" {} #subnet-0966dfeef931d6a8b
+variable "subnet_id" {} 
 variable "tag_name" {}
-
+variable "dev_region" {}
+variable "prod_region" {} 
+variable "tag_name" {}
