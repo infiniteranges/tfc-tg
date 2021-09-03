@@ -1,14 +1,14 @@
 provider "aws" {
-  region = "us-east-1"
+  region = var.prod_region
   alias  = "prod"
   assume_role {
-    role_arn    = var.role_arn    #"arn:aws:iam::753967026299:role/switchroleintoIR"
-    external_id = var.external_id #"infiniteranges"
+    role_arn    = var.role_arn    
+    external_id = var.external_id
   }
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = var.dev_region
 
 }
 
