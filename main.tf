@@ -1,6 +1,7 @@
 provider "aws" {
   region = var.prod_region
   alias  = "prod"
+
   assume_role {
     role_arn    = var.role_arn    
     external_id = var.external_id
@@ -9,7 +10,8 @@ provider "aws" {
 
 provider "aws" {
   region = var.dev_region
-
+  access_key = var.dumb_var
+  secret_key = var.dumb_key
 }
 
 data "aws_ami" "ubuntu" {

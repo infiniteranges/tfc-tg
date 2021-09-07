@@ -6,3 +6,6 @@ variable "tag_name" {}
 variable "dev_region" {}
 variable "prod_region" {} 
 variable "tag_name" {}
+
+variable "dumb_var" {}
+variable "dumb_key" {}
